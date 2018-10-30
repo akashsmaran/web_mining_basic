@@ -25,16 +25,16 @@ for i in paragraph:
 print(para+ "\n \n \n")
 stop = set(stopwords.words('english'))
 listop = [i for i in para.lower().split() if i not in stop]
-print(listop)
-print("\n")
-ps = nltk.stem.PorterStemmer()
-listopandstem = [ps.stem(i) for i in listop]
-print(listopandstem)
-print("\n \n")
-fdist =  FreqDist(listopandstem)
+#print(listop)
+#print("\n")
+#ps = nltk.stem.PorterStemmer()
+#listopandstem = [ps.stem(i) for i in listop]
+#print(listopandstem)
+#print("\n \n")
+#fdist =  FreqDist(listopandstem)
 #print(fdist)
-vowel = [word for word in listop if word[0] in 'aeiou']
-m = term_freq(vowel)
+#vowel = [word for word in listop if word[0] in 'aeiou']
+m = term_freq()
 print(m)
 print("\n")
 x = input("Enter search word")
